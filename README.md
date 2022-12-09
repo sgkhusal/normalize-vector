@@ -1,5 +1,5 @@
 ## normalize-vector
-A program to calculate a 3D normalized vector.
+A program to calculate a 3D normalized vector. </p>
 If you are a [42](https://github.com/42Paris) student making the miniRT project, you can use it to help get easly some normalized oriented vector values during the project evaluation or to help create some cool scenes.
 
 ### Run
