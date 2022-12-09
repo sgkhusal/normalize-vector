@@ -6,7 +6,7 @@
 /*   By: sguilher <sguilher@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 18:14:32 by sguilher          #+#    #+#             */
-/*   Updated: 2022/12/08 18:25:59 by sguilher         ###   ########.fr       */
+/*   Updated: 2022/12/09 11:38:07 by sguilher         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ double		vector_length(t_vector vector);
 
 /* utils */
 bool		is_valid_input(char *input[]);
+int			ft_isdigit(int c);
 size_t		ft_strlen(const char *str);
 double		ft_atod(char *nb);
 void		*ft_memmove(void *dest, const void *src, size_t n);

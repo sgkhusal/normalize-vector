@@ -6,7 +6,7 @@
 /*   By: sguilher <sguilher@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 18:20:06 by sguilher          #+#    #+#             */
-/*   Updated: 2022/12/09 11:33:45 by sguilher         ###   ########.fr       */
+/*   Updated: 2022/12/09 11:38:31 by sguilher         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_vector	set_vector(double x, double y, double z)
 
 bool	is_valid_char(char c)
 {
-	return (ft_isdigit(input[i][j]) || c == '-' || c == '.')
+	return (ft_isdigit(c) || c == '-' || c == '.');
 }
 
 bool	is_valid_input(char *input[])
@@ -39,12 +39,13 @@ bool	is_valid_input(char *input[])
 		j = 0;
 		while (input[i][j])
 		{
-			if (!ft_isdigit(input[i][j]))
+			if (!is_valid_char(input[i][j]))
 				return (false);
 			j++;
 		}
 		i++;
 	}
+	return (true);
 }
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
