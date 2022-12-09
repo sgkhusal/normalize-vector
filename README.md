@@ -6,3 +6,5 @@ A program to calculate a 3D normalized vector
 - `cd normalize-vector`
 - `make`
 - `./normalize x y z`
+
+x, y and z can be decimal numbers, eg: `./normalize -1 1.5 0.125`
